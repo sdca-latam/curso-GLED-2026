@@ -22,8 +22,6 @@ TODO: Reading text
 
 Text
 
-{{< text_snippet sticky_up >}}
-
 ## :speech_balloon: Discussion activity: Title
 
 **Time: ~Num minutes.**
@@ -35,8 +33,6 @@ Text
 **Time: ~Num minutes.**
 
 Text
-
-{{< text_snippet sticky_up >}}
 
 ## Summary
 

@@ -19,7 +19,6 @@ book:
   repo-url: "https://github.com/sdca-latam/curso-GLED-2026"
   # TODO: Fill in the URL
   site-url: ""
-  body-header: "{{< text_snippet wip >}}"
   chapters:
     - index.qmd
     - part: "Overview"
@@ -31,7 +30,7 @@ book:
     - part: "Pre-workshop"
       chapters:
         - pre-workshop/overview.qmd
-        
+
         - pre-workshop/code-of-conduct.qmd
         - pre-workshop/survey.qmd
     - part: "Sessions"
@@ -42,19 +41,19 @@ book:
   appendices:
     - appendix/for-teachers.qmd
     - appendix/references.qmd
-    
+
     - CONTRIBUTING.md
     - LICENSE.md
   page-footer:
     center:
-      - text: "License: CC BY 4.0 {{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}}"
+      - text: "License: CC BY 4.0"
         href: LICENSE.md
       - text: "Code of Conduct"
         href: "pre-workshop/code-of-conduct.qmd"
 
 format:
   html
-  
+
 
 metadata-files:
   - _metadata.yml
