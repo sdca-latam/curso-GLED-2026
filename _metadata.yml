@@ -1,0 +1,18 @@
+gh:
+  org: "sdca-latam"
+  repo: "curso-GLED-2026"
+
+# TODO: Fill in the project description
+tagline: ""
+
+# TODO: Confirm these URLs
+links:
+  site: ""
+  github: "https://github.com/sdca-latam/curso-GLED-2026"
+
+# TODO: Add the URLs to the surveys.
+surveys:
+  pre-workshop: "TODO"
+  feedback: "TODO"
+
+

@@ -1,0 +1,25 @@
+{
+  "editor.formatOnSave": true,
+  "editor.snippetSuggestions": "inline",
+  "conventional-branch.type": [
+    "build",
+    "ci",
+    "docs",
+    "feat",
+    "fix",
+    "refactor",
+    "style",
+    "test",
+    "chore",
+    "perf",
+    "revert"
+  ],
+  "conventional-branch.format": "{Type}/{Branch}",
+  
+  "[quarto]": {
+    "editor.defaultFormatter": "rvben.rumdl"
+  },
+  "files.insertFinalNewline": true,
+  "conventionalCommits.emojiFormat": "emoji",
+  "conventionalCommits.promptScopes": false
+}
