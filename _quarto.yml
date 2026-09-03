@@ -11,9 +11,9 @@ book:
   title: ""
   # TODO: Add more authors if needed.
   author:
-    - name: ""
-      affiliation: ""
-      orcid: ""
+    - name: "NAME"
+      affiliation: "UNIVERSITY"
+      # orcid: ""
   date: last-modified
   repo-url: "https://github.com/sdca-latam/curso-GLED-2026"
   # TODO: Fill in the URL

@@ -28,16 +28,11 @@ contains and the learning design behind the workshop material.
 After that, please go through the the pre-workshop tasks designed to establish a
 shared foundation for the start of the workshop. This includes:
 
-1. Install a version of R, RStudio, Quarto, and Git that is as updated as
-   possible in @sec-installing-programs. For some people, depending on their
-   institution, this task can take the **longest amount of time** because you
-   have to contact your IT to install these packages.
-2. Install necessary R packages.
-3. TODO: Add more tasks
-4. Read the syllabus (@sec-syllabus).
-5. Read the [Code of Conduct](pre-workshop/code-of-conduct.qmd)
+1. TODO: Add more tasks
+2. Read the syllabus (@sec-syllabus).
+3. Read the [Code of Conduct](/pre-workshop/code-of-conduct.qmd)
    (@sec-code-of-conduct).
-6. Complete the pre-workshop [survey](survey.qmd) (@sec-survey): This survey is
+4. Complete the pre-workshop [survey](survey.qmd) (@sec-survey): This survey is
    pretty quick, maybe \~10 minutes. There will be some bits from the tasks that
    you will need to paste into this survey.
 
