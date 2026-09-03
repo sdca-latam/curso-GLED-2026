@@ -1,56 +1,42 @@
 @_default:
   just --list --unsorted
 
-@_formats: format-md 
-@_checks: check-spelling check-urls check-commits
-@_builds: build-contributors build-readme build-website
-@_updates: update-from-template update-quarto-theme
-
 # Run all recipes
-run-all: _formats _checks _builds
+run-all: format-all check-all build-all
 
-# List all TODOs in the repository.
+# List all TODO items in the repository
 list-todos:
-  grep -R TODO . \
-    --exclude-dir=.vscode \
-    --exclude-dir=_book \
-    --exclude-dir=.quarto \
-    --exclude=justfile
+  grep -R -n \
+  --exclude-dir=.quarto \
+  --exclude-dir=_book \
+  --exclude-dir=_site \
+  --exclude-dir=.git \
+  --exclude=justfile \
+  --exclude=copier.yaml \
+  "TODO" .
 
 # Install or update the pre-commit hooks
 install-precommit:
   # Install pre-commit hooks
   uvx pre-commit install
-  # Run pre-commit hooks on all files
   uvx pre-commit run --all-files
-  # Update versions of pre-commit hooks
   uvx pre-commit autoupdate
 
+# Run all formatters
+format-all: format-md
 
+# Format Markdown files
+format-md:
+  # Use both rumdl and panache, for different purposes
+  uvx rumdl fmt --silent
+  uvx --from panache-cli panache format . --quiet
 
-# Update the Quarto rostools-theme extension
-update-quarto-theme:
-  # Will also add if it isn't already installed.
-  quarto update rostools/rostools-theme --no-prompt
-  # Soft link so Revealjs slides can use the extension.
-  ln -s _extensions/ slides/
+# Run all check recipes
+check-all: check-spelling check-urls
 
-# Check spelling with typos
+# Check for spelling errors in files
 check-spelling:
-  uvx typos
-
-# Check the commit messages on the current branch that are not on the main branch
-check-commits:
-  #!/usr/bin/env bash
-  branch_name=$(git rev-parse --abbrev-ref HEAD)
-  number_of_commits=$(git rev-list --count HEAD ^main)
-  if [[ ${branch_name} != "main" && ${number_of_commits} -gt 0 ]]
-  then
-    # If issue happens, try `uv tool update-shell`
-    uvx --from commitizen cz check --rev-range main..HEAD
-  else
-    echo "On 'main' or current branch doesn't have any commits."
-  fi
+  uvx typos --config .config/typos.toml
 
 # Install lychee from https://lychee.cli.rs/guides/getting-started/
 # Check that URLs work with lychee
@@ -58,17 +44,11 @@ check-urls:
   lychee . \
     --verbose \
     --extensions md,qmd \
+    --exclude "github\.com" \
     --exclude-path "_badges.qmd"
 
-
-
-# Format Markdown files
-format-md:
-  uvx rumdl fmt --silent
-
-# Build Quarto website
-build-website:
-  quarto render
+# Run all build recipes
+build-all: build-contributors build-readme build-website
 
 # Re-build the README file from the Quarto version
 build-readme:
@@ -78,10 +58,18 @@ build-readme:
 build-contributors:
   sh ./tools/get-contributors.sh sdca-latam/curso-GLED-2026 > includes/_contributors.qmd
 
+# Build Quarto website
+build-website:
+  quarto render
+
+# Preview the website with automatic reload on changes
+preview-website:
+  quarto preview
+
 # Check for and apply updates from the template
 update-from-template:
-  uvx copier update --trust --defaults
+  uvx copier update --defaults
 
 # Reset repo changes to match the template
 reset-from-template:
-  uvx copier recopy --trust --defaults
+  uvx copier recopy --defaults
