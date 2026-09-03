@@ -1,7 +1,8 @@
 # Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
-_commit: 0.11.0
+_commit: 0.14.0
 _src_path: gh:rostools/template-workshop
 for_rostools: false
 github_repo: curso-GLED-2026
 github_user: sdca-latam
+hosting_provider: gh-pages
 workshop_type: general

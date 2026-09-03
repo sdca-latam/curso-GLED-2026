@@ -18,19 +18,19 @@ TODO: Reading text
 
 ## :technologist: Exercise: Title
 
-**Time: ~NUM minutes.**
+**Time: \~Num minutes.**
 
 Text
 
 ## :speech_balloon: Discussion activity: Title
 
-**Time: ~Num minutes.**
+**Time: \~Num minutes.**
 
 Text
 
 ## :book: Reading task: Title
 
-**Time: ~Num minutes.**
+**Time: \~Num minutes.**
 
 Text
 

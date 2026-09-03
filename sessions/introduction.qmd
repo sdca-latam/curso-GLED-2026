@@ -13,8 +13,8 @@
 ::: {.callout-note collapse="true"}
 ## Teacher note
 
-The slides contain speaking notes that you can view by pressing 'S' on
-the keyboard.
+The slides contain speaking notes that you can view by pressing 'S' on the
+keyboard.
 :::
 
 ## The Big Picture
