@@ -2,51 +2,51 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Welcome",
+    "title": "Welcome!",
     "section": "",
-    "text": "Welcome\nThis ((TODO: length)) workshop is a ((TODO: Short description of the workshop.)) It is designed for doing participatory live-typing, where the teacher demonstrates the tasks on their computer connected to a projector while learners type along on their own computer. The workshop also includes reading tasks, discussion activities, and hands-on exercises.\nThis website contains all of the material for the workshop, including readings, exercises, presentations, live-typing material, and images. It is structured as a book, with “chapters” as sessions, in order of appearance. We make heavy use of the website throughout the workshop where “type-along” sessions almost identically follow the material on the website (with slight modifications for time or more detailed explanations).\nCheck out the overview section of the workshop, starting with the Syllabus.\nIf you plan on attending the workshop, please make sure to complete the Pre-workshop tasks to get set up and ready for the workshop. The pre-workshop tasks include a survey that you need to fill out before the workshop starts.",
+    "text": "Welcome!\nThis ((TODO: length)) workshop is a ((TODO: Short description of the workshop.)) It is designed for doing participatory live-typing, where the teacher demonstrates the tasks on their computer connected to a projector while learners type along on their own computer. The workshop also includes reading tasks, discussion activities, and hands-on exercises.\nThis website contains all of the material for the workshop, including readings, exercises, presentations, live-typing material, and images. It is structured as a book, with “chapters” as sessions, in order of appearance. We make heavy use of the website throughout the workshop where “type-along” sessions almost identically follow the material on the website (with slight modifications for time or more detailed explanations).\nCheck out the overview section of the workshop, starting with the Syllabus.\nIf you plan on attending the workshop, please make sure to complete the Pre-workshop tasks to get set up and ready for the workshop. The pre-workshop tasks include a survey that you need to fill out before the workshop starts.",
     "crumbs": [
-      "Welcome"
+      "Welcome!"
     ]
   },
   {
     "objectID": "index.html#target-audiences",
     "href": "index.html#target-audiences",
-    "title": "Welcome",
+    "title": "Welcome!",
     "section": "Target audiences",
     "text": "Target audiences\nThis website and its content are targeted to three groups:\n\nFor the learners to use during the workshop, both to follow along and also to use as a reference after the workshop ends. A more detailed description of who the learner is can be found in Is this for you?\nFor the teachers to use as a guide for when they do the type-along sessions.\nFor those who are interested in teaching, who may not have much experience or may not know where to start, to use this website as a guide to running and teaching their own workshops.",
     "crumbs": [
-      "Welcome"
+      "Welcome!"
     ]
   },
   {
     "objectID": "index.html#re-use-and-licensing",
     "href": "index.html#re-use-and-licensing",
-    "title": "Welcome",
+    "title": "Welcome!",
     "section": "Re-use and licensing",
     "text": "Re-use and licensing\nThe workshop material is licensed under the Creative Commons Attribution 4.0 License, so the material can be used, re-used, and modified, as long as there is attribution to this source. Check out the For teachers section for more details and tips on using this material for teaching.",
     "crumbs": [
-      "Welcome"
+      "Welcome!"
     ]
   },
   {
     "objectID": "index.html#contributing",
     "href": "index.html#contributing",
-    "title": "Welcome",
+    "title": "Welcome!",
     "section": "Contributing",
     "text": "Contributing\nWant to contribute to this workshop? Look through our CONTRIBUTING page for contribution guidelines on how to get started.",
     "crumbs": [
-      "Welcome"
+      "Welcome!"
     ]
   },
   {
     "objectID": "index.html#how-the-website-is-made",
     "href": "index.html#how-the-website-is-made",
-    "title": "Welcome",
+    "title": "Welcome!",
     "section": "How the website is made",
     "text": "How the website is made\nThe workshop material is created using Quarto to write the material and create the book format, GitHub to host the Git repository of the material, and GitHub Actions with Netlify to build and host the website. The original source material for this workshop is found on the curso-GLED-2026 GitHub repository.",
     "crumbs": [
-      "Welcome"
+      "Welcome!"
     ]
   },
   {
